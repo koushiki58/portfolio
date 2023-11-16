@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UAV-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f476731826.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo final.png" class="logo">
+            <ul id="sidemenu">
+            <li><a href="#header">Home</a></li> 
+            <li><a href="#about">About</a></li> 
+            <li><a href="#services">Services</a></li> 
+            <li><a href="#portfolio">Portfolio</a></li> 
+            <li><a href="#contact">Contact Me</a></li> 
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer,Software Developer,Web Designer</p>
+            <h1>Hi, I'm <span>Koushiki</span><br>Manna From India </h1>
+        </div>
+    </div>
+  </div>  
+  <!-- --------------about----------------- -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pic 2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME </h1>
+                <p>Creative,task-driven individual in web designing and web development.Equipped with knowledge in HTML,CSS,JavaScript,C,Java and other programming languages.I'm a good team leader and can handel group project very well. My learning capacity is very grasp which might help me in learning new informations if needed during a project. Being very punctual I always value for time, proficient in UI/UX Designing and various other components.  </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')" >Skills</p>
+                <p class="tab-links"onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>UI/UX Design</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br> Web App Development</li>
+                    <li><span>Web Designn</span><br>Designing Web Interfaces</li>
+                </ul>
+            </div>
+            <div class="tab-contents"id="Education">
+                <ul>
+                    <li><span>2017(SECONDARY EXAMINATION)</span><br>Marks-85.12%<br>[Ranaghat Brojobala Girls High School]</li>
+                    <li><span>2019(HIGHER SECONDARY EXAMINATION)</span><br> Marks-77.2%<br>[Ranaghat Debnath Institution for Girls]</li>
+                    <li><span>2024(B.TECH)</span><br> Marks-9.22 CGPA<br>[Future Institute of Engeneering and Management]</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- ----------services ------------------ -->
+   <div id="services"></div>
+   <div class="container">
+    <h1 class="sub-title"> MY SERVICES</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I can create the layout and design of a website. In simple terms, I can make a site look good. I use design programmes to create visual elements and usually have expertise in user interface (UI), which means they strategically design a site that's intuitive and easy for visitors to navigate.</p>
+            <a href="#">Learn more</a>
+        </div>
+            <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>I can create the user interface for an app, website, or other interactive media. It includes collaborating with product managers and engineers to gather requirements from users before designing ideas that can be communicated using storyboards. I can also process flows or sitemaps.</p>
+            <a href="#">Learn more</a>
+            </div>
+            <div>
+            <i class="fas fa-code-branch"></i>
+            <h2>Web Development</h2>
+            <p>I can develop World Wide Web applications using a client-server model. The applications typically use HTML, CSS, and JavaScript in the client, and any general-purpose programming language in the server. HTTP is used for communications between client and server.</p>
+            <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- ---------portfolio-------------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="house price prediction.png">
+                <div class="layer">
+                    <h3>House Price Prediction</h3>
+                    <p>Developed a robust house price prediction model.
+                    </p>
+                    <a href="https://github.com/koushiki58/House-price-prediction"><i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="movie recom system.png">
+                <div class="layer">
+                <h3>Movie Recommendation System</h3>
+                <p>Developed a movie recommendation system.
+                 </p>
+                    <a href="https://github.com/koushiki58/movie-recommendation-system"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="music app.png">
+                <div class="layer">
+                <h3>Music Player</h3>
+                <p>easy music palyer app to acess .It connects you to the talented people around the world.</p>
+                <a href="https://github.com/koushiki58/spotify"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="block chain health care.png">
+                <div class="layer">
+                <h3>Health Care System</h3>
+                <p>Designed and implemented a web application for securely decentralizing health data from patients.</p>
+                <a href="https://github.com/koushiki58/Datareum"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------Contact form----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT ME</h1>
+                <p><i class="fas fa-paper-plane"></i> koushikimanna58@gmail.com</p>
+
+                <p><i class="fas fa-phone-square-alt"></i> +918327689566</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/koushiki.sheikhmanna?mibextid=ZbWKwL"><i class="fab fa-facebook"></i> </a>
+                    <a href="https://github.com/koushiki58"><i class="fa brands fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/koushiki-manna"><i class="fab brands fa-linkedin"></i> </a>
+                </div>
+                <a href="KOUSHIKI MANNA_CV__1 (1).pdf" download class="btn btn2">DOWNLOAD CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Youe Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>Copyright @ Koushiki. Made with by Personal Portfolio Website<i class="fas fa-heart"></i></p>
+    </div>
+</div>
+  <script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6bx2oGKXmv5Z-gnQM8iZIho_aZC2zTHt0TcWZQhp3YfBsk_Op1CpVO9BCMv-nByE66A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message successfully sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
